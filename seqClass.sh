@@ -1,3 +1,4 @@
+#Cambios en el archivo dentro del ordenador
 #!/bin/bash #Linea informativa
 seq=$1 #Guarda el valor a entrar como argumento en una variable a analizar
 seq=$(echo $seq | tr a-z A-Z)  #Cambia los argumentos entrados a mayuscula
