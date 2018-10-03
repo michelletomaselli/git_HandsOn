@@ -1,4 +1,5 @@
 #!/bin/bash
+# El script te retorna si una secuencia es DNA o RNA, ambas o ninguna
 seq=$1
 seq=$(echo $seq | tr a-z A-Z)  # Note we just added this line
 if [[ $seq =~ ^[ACGTU]+$ ]]; then
