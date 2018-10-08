@@ -5,7 +5,7 @@ seq=$(echo $seq | tr a-z A-Z)  #Cambia los argumentos entrados a mayuscula
 if [[ $seq =~ ^[ACGTU]+$ ]]; then #Si el valor entrado corresponde a ACGTU entrara dentro del condicional
   if [[ $seq =~ T ]]; then #Si contiene alguna T entrara dentro
     if [[ $seq =~ U ]]; then #Si ademas de la T contiene una U entrara dentro     
-      echo "The sequence can be DNA or RNA" #Te retornara el mensaje 
+      echo "The sequence is not DNA nor RNA" #Te retornara el mensaje 
     else #Si no tiene ninguna U pero si T ya que esta dentro de este condicional, entrara dentro
       echo "The sequence is DNA" #Te retornara el mensaje #Te retornara el mensaje
     fi 
